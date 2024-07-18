@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Naruto...</title>
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        audio {
+            position: fixed;
+            /* Deixa o player de audio fixo na tela */
+            bottom: 5px;
+            /* Ajusta a posição do player na parte de baixo da tela */
+            left: 50%;
+            /* Centralizar o player de audio */
+            transform: translateX(-50%);
+            /* Centraliza horizontalmente o audio */
+            opacity: 0.8;
+            /* Define a opacidade do player */
+            background-color: rgba(0, 0, 0, 0);
+            /* Cor de fundo transparente */
+            border: none;
+            /* Remove as bordas do player */
+            padding: 10px;
+            /* Reduz o tamanho e o espaçamento interno do player*/
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            /* Adiciona uma sombra */
+            z-index: 9999;
+            /* Garante que o player esteja acima de outros elementos */
+            color: rgb(248, 248, 248);
+            /* Define a cor do player como branco */
+        }
+
+        /* Estilos para o menu de navegação */
+        nav {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 10000;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: orangered;
+            text-decoration: none;
+            font-size: 18px;
+            text-shadow: 1px 2px rgb(9, 5, 255);
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Adiciona o aúdio e os controles ao html, autoplay não funcionará em navegadores baseados em chromium, 
+style define o tamanho do player na tela -->
+    <audio controls autoplay loop style="width: 300px;">
+        <source src="./fonte/O-NARUTO-PODE-SER-UM-POUCO-DURO-AS-VEZES....mp3" type="audio/mp3">
+        Seu navegador não suporta áudio HTML5.
+    </audio>
+
+    <nav> <!--Barra de navegação na parte superior das páginas.-->
+        <ul>
+            <li>
+                <a href="index.html">O Naruto...</a>
+            </li>
+            <li>
+                <a href="SobreNaruto.html">Sobre o Naruto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--div é usado para dividir o conteudo da página em seções, cria containeres genéricos e agrupa de maneira lógica,
+    class é usado para definir uma classe ao conteudo de um elemento html(Essas classes são usadas para aplicar
+    elementos CSS e selecionar esses elementos usando o JS).-->
+    <div class="fundonaruto">
+        <video src="./fonte/Onaruto.mp4" autoplay muted loop>
+        </video>
+
+    </div>
+    <!--A classe box aqui é utilizada para criar um contêiner que junta a imagem e o paragrafo, auxilia a posicionar o
+o conteudo na tela-->
+    <div class="box">
+        <div class="conteudo">
+            <img src="./fonte/naruto-138.png" alt="Imagem do Naruto">
+            <p>O Naruto pode ser um pouco duro às vezes, talvez você não saiba disso, mas o Naruto também cresceu sem
+                pai. Na verdade, ele nunca conheceu nenhum de seus pais, e nunca teve nenhum amigo em nossa aldeia.
+                Mesmo assim, eu nunca o vi chorar, ficar zangado ou se dar por vencido. Ele está sempre disposto a
+                melhorar, ele quer ser respeitado, é o sonho dele e o Naruto daria a vida por isso sem hesitar. Meu
+                palpite é que ele se cansou de chorar e decidiu fazer algo a respeito!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

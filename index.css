@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    /* Aplica espaço entre o conteudo do elemento e as bordas */
+    margin: 0;
+    /* Aplica margem a todos os lados do elemento */
+    font-family: Arial;
+    /* Define a fonte que será usada no texto */
+    box-sizing: border-box;
+    /* Define como o tamanho total do elemento será calculado, incluindo padding e border */
+}
+
+body {
+    width: 100%;
+    /* Define a largura do elemento */
+    min-height: 100vh;
+    /* Define a altura minima que o elemento pode ter */
+    overflow: hidden;
+    /* desativa as barras de rolagem da página */
+    position: relative;
+    /* Adicionado para garantir a posição absoluta dos elementos internos */
+    color: black;
+}
+
+
+.fundonaruto {
+    position: relative;
+    /* Define o posicionamento relativo para o elemento */
+    width: 100%;
+    height: 100vh;
+    /* Define a altura do elemento */
+    overflow: hidden;
+}
+
+.fundonaruto video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ajusta a imagem para cobrir toda a caixa do conteudo */
+    z-index: 1;
+    /*controla a ordem de empilhamento dos elementos da página, sendo a prioridade na ordem crescente*/
+}
+
+.h2-container {
+    position: absolute;
+    /* Define o posicionamento absoluto para o elemento */
+    top: 0;
+    /* Ajusta o elemnto para baixo */
+    left: 0;
+    /* Ajusta o elemnto para direita */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* Controla a forma como o elemento será exibido na página e especifica o comportamento do layoutdo elemento */
+    justify-content: center;
+    /* Alinha os itens em relação ao eixo principal do contêiner */
+    align-items: center;
+    /* Alinha os itens em relação ao eixo transversal do contêiner */
+    z-index: 3;
+    color: white;
+    /* Define a cor do texto */
+    font-size: 2em;
+    /* Define o tamanho da fonte */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Aplica uma sombra para melhorar a visualização do texto */
+}
+
+.box {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent);
+    /* Aplica um plano de fundo em degradê na página*/
+    display: flex;
+    justify-content: center;
+}
+
+.box .conteudo {
+    width: 45%;
+    text-align: left;
+    margin-left: -50%;
+    margin-top: 7%;
+}
+
+.box img {
+    width: 75%;
+    min-width: 300px;
+}
+
+.box p {
+    width: 75%;
+    color: white;
+    font-size: 15px;
+    line-height: 27px;
+    text-align: left;
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    /*Aplica os estilos abaixo caso a largura da tela do dispositivo seja de no max 1024px*/
+    .box {
+        padding: 2%;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    .box .conteudo {
+        width: 100%;
+    }
+}
+
+@font-face {
+    font-family:'narutin';
+    src: url(./fonte/njnaruto.ttf);
+}
+a{
+    font-family:'narutin';
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+a{
+    margin: 254px;
+}
+

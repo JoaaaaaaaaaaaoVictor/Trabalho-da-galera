@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    overflow: hidden;
+
+}
+
+.fundo {
+    position: absolute;
+    z-index: 1;
+}
+
+.box {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0.4, 0.7, 0.9, 0.9), transparent);
+    display: flex;
+    justify-content: center;
+
+}
+
+.fotoNaruto {
+    width: 120px;
+    height: 120px;
+    z-index: 3;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid black;
+    object-fit: cover;
+    margin: 0;
+    margin-top: 60px;
+    margin-left: 9%;
+    transform: translateX(-50%);
+
+
+}
+
+@font-face {
+    font-family: 'narutin';
+    src: url(./fonte/njnaruto.ttf);
+}
+
+a {
+    font-family: 'narutin';
+    margin: 0 254px;
+    z-index: 4;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.box p {
+    width: 80%;
+    color: white;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: left;
+    margin-top: 200px;
+}
